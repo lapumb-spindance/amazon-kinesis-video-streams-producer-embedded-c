@@ -16,6 +16,3 @@ if [ -z "$AWS_ACCESS_KEY_ID" ] || [ -z "$AWS_SECRET_ACCESS_KEY" ]; then
     echo "Your environment setup is _almost_ complete. Please export your AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY."
     echo "You can optionally create a $PRIV_ENV_FILE (which is git ignored), which is sourced in this script."
 fi
-
-echo "If you have not already done so, please execute download_resources.sh to pull down the sample H264 frames."
-echo "The WebRTC KVS example will not work without them."

@@ -44,9 +44,9 @@
 
 #endif /* KVS_USE_POOL_ALLOCATOR */
 
-#define NUMBER_OF_VIDEO_FRAME_FILES     240
-#define VIDEO_FRAME_FILEPATH_FORMAT     "../res/media/h264_annexb/frame-%03d.h264"
-#define VIDEO_FPS                       30
+#define NUMBER_OF_VIDEO_FRAME_FILES     245
+#define VIDEO_FRAME_FILEPATH_FORMAT     "../h264SampleFrames/luna_frames/frame_%d.h264"
+#define VIDEO_FPS                       50
 
 int producer_main(int argc, char *argv[]);
 int producer_taskAddVideoFrame(uint8_t *pData, size_t uLen, uint64_t uTimestamp, FrameKeyHandle keyHandle);

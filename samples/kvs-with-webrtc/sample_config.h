@@ -23,15 +23,15 @@
 #define AWS_SECRET_KEY                  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 /* KVS stream configuration */
-#define KVS_STREAM_NAME                 "kvs_example_camera_stream"
-#define AWS_KVS_REGION                  "us-east-1"
+#define KVS_STREAM_NAME                 "kvs_rpi_dual_stream"
+#define AWS_KVS_REGION                  "us-east-2"
 #define AWS_KVS_SERVICE                 "kinesisvideo"
 #define AWS_KVS_HOST                    AWS_KVS_SERVICE "." AWS_KVS_REGION ".amazonaws.com"
 
 /* KVS optional configuration */
 #define ENABLE_AUDIO_TRACK              0
 #define ENABLE_IOT_CREDENTIAL           0
-#define ENABLE_RING_BUFFER_MEM_LIMIT    0
+#define ENABLE_RING_BUFFER_MEM_LIMIT    1
 
 /* Audio configuration */
 #if ENABLE_AUDIO_TRACK
